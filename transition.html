@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Transition</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 5px solid rgb(0, 0, 0);
+            background-color: aqua;
+            font-size: x-large;
+            transition: transform 3s ease-in 1s , background-color 3s linear 1s,width 3s linear 1s ;
+        }
+        .box:hover{
+            /* transform: scale(0.5) rotate(45deg) translateX(100px); */
+            background-color: brown;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <p>Translate:it moves in x or y axis or both axis</p>
+    <p>Transform:Change the shape.This is the CSS property name</p>
+    <p>Transition:How long it take to move ,change shape ,color etc</p>
+    <div class="box">Box-1</div>
+    <div class="box">Box-2</div>
+    <div class="box">Box-3</div>
+    
+</body>
+</html>
